@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(150deg, #77a9de, #9563ba);
+}
+
+.form {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 30px;
+}
+.form:hover {
+  box-shadow: 0 0 3px 5px #0004;
+}
+
+.form h1 {
+  position: relative;
+}
+
+.form h1::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: linear-gradient(150deg, #77a9de, #9563ba);
+  bottom: -20%;
+  left: 0;
+}
+
+.form h1 {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form label {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-control-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 350px;
+}
+
+.form-control-right input {
+  width: 60%;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.form-control {
+  width: 47%;
+  margin-top: 25px;
+}
+
+.form-control-input {
+  width: 100%;
+  padding: 10px 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #0004;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.gender {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.gender-control {
+  width: 30%;
+}
+
+.radio {
+  display: inline-block;
+  margin-left: 7px;
+}
+
+h3 {
+  margin: 20px 0;
+}
+
+.btn {
+  border: none;
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(150deg, #77a9de, #9563ba);
+  font-size: 17px;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  color: white;
+  margin: 40px 0 22px 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 3px 2px dodgerblue;
+}
+
+/* Table */
+
+.wrapper__table{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #654ea3, #eaafc8);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 18px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4b0082;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
